@@ -1,4 +1,3 @@
-
 #coding=gbk
 #!/usr/bin/env python
 import pymongo
@@ -220,11 +219,11 @@ def noSenseWords_init():
     noSenseWords.append(" ".encode('utf-8'))
     noSenseWords.append(",".encode('utf-8'))
     noSenseWords.append("'".encode('utf-8'))
-    #noSenseWords.append(u"°üÓÊ".encode('utf-8'))
-    noSenseWords.append(u"ÕýÆ·".encode('utf-8'))
-    noSenseWords.append(u"×¨¹ñ".encode('utf-8'))
-    noSenseWords.append(u"ÐÂ¿î".encode('utf-8'))
-    noSenseWords.append(u"ÐÂÆ·".encode('utf-8'))
+    #noSenseWords.append(u"ï¿½ï¿½ï¿½ï¿½".encode('utf-8'))
+    noSenseWords.append(u"ï¿½ï¿½Æ·".encode('utf-8'))
+    noSenseWords.append(u"×¨ï¿½ï¿½".encode('utf-8'))
+    noSenseWords.append(u"ï¿½Â¿ï¿½".encode('utf-8'))
+    noSenseWords.append(u"ï¿½ï¿½Æ·".encode('utf-8'))
 
 def calFinalScore(text_score,edit_length):
     if edit_length<2:
